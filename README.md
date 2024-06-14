@@ -2,7 +2,7 @@
 
 TracePal is a free, open source and ethical application where you can hang out on a map with your buddies! Share your whereabouts with your inner circle, whether it's family, friends, or your own private group.
 
-### Collaborate
+### [Collaborate](https://github.com/bonafide-ngo/tracepal/issues)
 Contribute with suggestions, report errors and help translating the App in other languages. Get involved, partecipate in the discussions and help improving the app.
 
 ### [TracePal.app](https://tracepal.app)
