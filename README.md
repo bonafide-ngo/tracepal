@@ -7,5 +7,15 @@ TracePal is a free, open source and ethical application where you can hang out o
 ### [Collaborate](https://github.com/bonafide-ngo/tracepal/issues)
 Contribute with suggestions, report errors and help translating the App in other languages. Get involved, partecipate in the discussions and help improving the app.
 
+
+### [Donate](https://donorbox.org/tracepal-en)
+Tracepal is free application offered under the umbrella of the organization [Bona Fide NGO](https://bonafide.ngo) that is engaged in social impact missions.
+
+The best way to ensure that Tracepal remains available and free is to make a Donation.
+Donations are never linked to your Tracepal account and can be anonymous.
+
+- [Donate](https://donorbox.org/tracepal-en) (english)
+- [Dona](https://donorbox.org/tracepal-it) (italian)
+
 ### [TracePal.app](https://tracepal.app)
-Sign up for free at the live deployment **TracePal.app** and stay connected wherever you roam!
+Check out the official website [TracePal.app](https://tracepal.app) and sign up for free to stay connected wherever you roam!
