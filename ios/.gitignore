@@ -1,0 +1,59 @@
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+*.xcuserdatad
+*.xcuserstate
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/xcuserdatad/
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# Other system files
+*.DS_Store
+*.swp
+*.swo
+*.lock
+*.log
+
+# User-specific files
+*.user
+*.userdatad
+
+# Archive files
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Documentation
+docs/
+*.docset
+*.html
+
+# IDE files
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Xcode 9+
+*.xcarchive
+*.xcarchive/
+*.xcassets/
+
+# Deploy
+GoogleService-Info.plist
+GoogleService-Info.*.plist
+AuthKey*.p8

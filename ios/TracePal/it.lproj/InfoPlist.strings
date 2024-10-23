@@ -1,0 +1,4 @@
+NSCameraUsageDescription = "Permetti l'accesso alla Camera per fare foto o video chiamate.";
+NSMicrophoneUsageDescription = "Permetti l'accesso all Microfono per registrare audio o fare chiamate.";
+NSLocationWhenInUseUsageDescription = "Attiva i servizi di localizzazione per visualizzare i tuoi gruppi sulla mappa e condividere la tua posizione con loro.";
+NSLocationAlwaysAndWhenInUseUsageDescription = "Attiva i servizi di localizzazione per visualizzare i tuoi gruppi privati sulla mappa e condividere la tua posizione con loro.";
