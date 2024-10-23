@@ -1,0 +1,48 @@
+
+# Gradle files
+.gradle/
+build/
+release/
+local.properties
+
+# Android Studio files
+.idea/
+*.iml
+*.hprof
+
+# Gradle Wrapper files
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Other Android related files
+*.log
+captures/
+.externalNativeBuild/
+*.apk
+*.ap_
+*.dex
+.cxx
+
+# JAR files
+*.jar
+
+# Miscellaneous
+*.class
+*.swp
+*.swo
+*.DS_Store
+
+# User-specific files
+*.user
+*.sublime-workspace
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Deploy
+google-services.json
+google-services.*.json
+

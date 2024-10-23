@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Allows a background work to access the network status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BIND_WORK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature
+        android:name="android.software.webview"
+        android:required="true" />
+
+    <!-- Video -->
+    <!--uses-permission android:name="android.permission.CAMERA" /-->
+
+    <!--uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" /-->
+    <!--uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" /-->
+
+    <!-- Audio -->
+    <!--uses-permission android:name="android.permission.RECORD_AUDIO" /-->
+    <!--uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /-->
+
+    <!--uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" /-->
+    <!--uses-feature
+        android:name="android.hardware.audio.output"
+        android:required="false" /-->
+
+    <!-- File -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29"
+        tools:ignore="ScopedStorage" />
+
+    <!-- Geolocation -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Background Geolocation (> Android 10, API 29) -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!-- On boot worker -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <!-- Call notification -->
+    <!-- uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /-->
+    <!--uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /-->
+
+    <!-- Call webrtc -->
+    <!--uses-permission android:name="android.permission.WAKE_LOCK" /-->
+
+    <!-- Telephone state -->
+    <!--uses-permission android:name="android.permission.READ_PHONE_STATE" /-->
+
+    <!-- Bluetooth legacy -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <!-- Communicates with already-paired Bluetooth devices -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_launcher"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TracePalApp"
+        android:usesCleartextTraffic="false">
+        <!-- Application + Share sheet -->
+        <activity
+            android:name=".ActivityWebView"
+            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|uiMode"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:showOnLockScreen="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+
+                <!--
+                Open Login into App
+                Get Asset Links from Play Console > Release > Setup > App Integrity
+                https://tracepal.app/.well-known/assetlinks.json
+                https://developer.android.com/training/app-links/verify-android-applinks
+                -->
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="dev.tracepal.app"
+                    android:pathPrefix="/app/"
+                    android:scheme="https" />
+                <data
+                    android:host="tracepal.app"
+                    android:pathPrefix="/app/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <!-- Disable Google Safe Browsing -->
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="false" />
+
+        <!-- Firebase -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="MESSAGE_01" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_name" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/bs_primary" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- https://developer.android.com/training/location/permissions -->
+        <service
+            android:name=".ActivityWebView"
+            android:foregroundServiceType="location">
+        </service>
+
+        <!-- Broadcast - Android >= 31 -->
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- Keep any other actions your receiver is already handling -->
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

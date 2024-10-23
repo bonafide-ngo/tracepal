@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bs_body_bg">#ffffff</color>
+    <color name="bs_dark">#343a40</color>
+    <color name="bs_light">#f8f9fa</color>
+    <color name="bs_primary">#78c2ad</color>
+    <color name="bs_danger">#ff7851</color>
+</resources>

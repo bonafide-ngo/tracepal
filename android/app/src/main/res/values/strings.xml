@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_debug">false</string>
+    <string name="app_name">TracePal</string>
+    <string name="app_domain">tracepal.app</string>
+    <string name="app_url_root">https://tracepal.app/app/</string>
+    <string name="app_url_board">https://tracepal.app/app/board/board.html</string>
+    <string name="app_url_api">https://tracepal.app/api/</string>
+    <!-- Miscellaneous -->
+    <string name="app_webrtc_ring">46000</string>
+    <string name="app_locationTimer_runnable">30000</string>
+    <string name="app_locationTimer_worker">15</string>
+    <!-- Lang - en -->
+    <!-- Oops no internet -->
+    <string name="lang_en_no_internet">No Internet</string>
+    <string name="lang_en_check_internet">Check your Internet connection and try again</string>
+    <string name="lang_en_turn_on">Please turn on</string>
+    <string name="lang_en_turn_off">Please turn off</string>
+    <string name="lang_en_turn_on_airplane_mode">You have turned on the airplane mode</string>
+    <string name="lang_en_wifi">Wi-Fi</string>
+    <string name="lang_en_airplane_mode">Airplane mode</string>
+    <!-- Channels -->
+    <string name="lang_en_channel_call_name">Calls - v1.0</string>
+    <string name="lang_en_channel_call_description">Call notifications</string>
+    <string name="lang_en_channel_message_name">Messages - v1.0</string>
+    <string name="lang_en_channel_message_description">Message notifications</string>
+    <string name="lang_en_channel_system_name">System - v1.0</string>
+    <string name="lang_en_channel_system_description">System notifications</string>
+    <!-- Alert -->
+    <string name="lang_en_alert_title_information">Information</string>
+    <string name="lang_en_alert_message_permission_location">Allow the following permission to detect your position</string>
+    <string name="lang_en_alert_message_permission_audio">Allow the following permission to record audio-messages and enable calls</string>
+    <string name="lang_en_alert_message_permission_camera">Allow the following permission to take photos and enable video-calls</string>
+    <string name="lang_en_alert_message_permission_audio_camera">Allow the following permissions to enable video-calls</string>
+    <string name="lang_en_alert_message_permission_telephone">Allow the following permission to protect your secure calls when an ongoing unsecure telephone-call is detected</string>
+    <string name="lang_en_alert_button_continue">Continue</string>
+    <!-- Lang - it -->
+    <!-- Oops no internet -->
+    <string name="lang_it_no_internet">No Internet</string>
+    <string name="lang_it_check_internet">Verifica la tua connessione Internet e prova di nuovo</string>
+    <string name="lang_it_turn_on">Attiva</string>
+    <string name="lang_it_turn_off">Disattiva</string>
+    <string name="lang_it_turn_on_airplane_mode">Hai la modalità aereo attivata</string>
+    <string name="lang_it_wifi">Wi-Fi</string>
+    <string name="lang_it_airplane_mode">Modalità aereo</string>
+    <!-- Channels -->
+    <string name="lang_it_channel_call_name">Chiamate</string>
+    <string name="lang_it_channel_call_description">Notifiche di chiamate</string>
+    <string name="lang_it_channel_message_name">Messaggi</string>
+    <string name="lang_it_channel_message_description">Notifiche di messaggi</string>
+    <string name="lang_it_channel_system_name">Sistema</string>
+    <string name="lang_it_channel_system_description">Notifiche di sistema</string>
+    <!-- Alert -->
+    <string name="lang_it_alert_title_information">Informazione</string>
+    <string name="lang_it_alert_message_permission_location">Consenti la seguente autorizzazione per rilevare la tua posizione</string>
+    <string name="lang_it_alert_message_permission_audio">Consenti la seguente autorizzazione per registrare messaggi-audio e consentire chiamate</string>
+    <string name="lang_it_alert_message_permission_camera">Consenti la seguente autorizzazione per scattare foto e consentire video-chiamate</string>
+    <string name="lang_it_alert_message_permission_audio_camera">Consenti le seguenti autorizzazioni per consentire video-chiamate</string>
+    <string name="lang_it_alert_message_permission_telephone">Consenti la seguente autorizzazione per proteggere le tue chiamate sicure quando viene rilevata una telefonata non sicura in corso</string>
+    <string name="lang_it_alert_button_continue">Continua</string>
+</resources>

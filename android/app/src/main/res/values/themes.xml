@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.TracePalApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bs_dark</item>
+        <item name="colorPrimaryVariant">@color/bs_dark</item>
+        <item name="colorOnPrimary">@color/bs_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/bs_dark</item>
+        <item name="colorSecondaryVariant">@color/bs_dark</item>
+        <item name="colorOnSecondary">@color/bs_dark</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/bs_body_bg</item>
+    </style>
+    <!-- Buttons -->
+    <style name="PrimaryButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/bs_primary</item>
+    </style>
+    <style name="NeutralButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/bs_light</item>
+    </style>
+    <!-- Alerts -->
+    <style name="AlertInfo" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNeutralButtonStyle">@style/PrimaryButtonStyle</item>
+    </style>
+    <style name="AlertError" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/bs_danger</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/bs_dark</item>
+    </style>
+</resources>
