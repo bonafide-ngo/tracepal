@@ -4,6 +4,10 @@ TracePal is a free, open source and ethical application where you can hang out o
 
 `The application's source code is currently undergoing review and analysis in preparation for its initial open-source release. Thank you for your patience.`
 
+- [x] Android code - `DONE`
+- [ ] iOS code - `IN REVIEW`
+- [ ] Web code - `IN REVIEW` 
+
 ### [Collaborate](https://github.com/bonafide-ngo/tracepal/issues)
 Contribute with suggestions, report errors and help translating the App in other languages. Get involved, partecipate in the discussions and help improving the app.
 
